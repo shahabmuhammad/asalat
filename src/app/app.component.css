@@ -49,9 +49,25 @@
     margin-right: 15px;
 }
 
-.image-box-wrapper p{
+.image-box-wrapper p {
     font-weight: bold;
 }
-.success-patner-section{
+
+.success-patner-section {
     background-image: url('../assets/img/success-patner-bg.jpg');
+}
+
+.map-icon {
+    margin-right: 8px;
+    font-size: 30px;
+}
+
+.tel {
+    text-decoration: none;
+    color: #fff;
+    font-size: 21px;
+    cursor: pointer !important
+}
+.invalid-feedback{
+    color: #fff !important;
 }
