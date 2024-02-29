@@ -3,13 +3,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { AboutUsComponent } from "./components/about-us/about-us.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, NgClass, NgFor, NgIf, ReactiveFormsModule, HttpClientModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    imports: [RouterOutlet, NgClass, NgFor, NgIf, ReactiveFormsModule, HttpClientModule, AboutUsComponent]
 })
 export class AppComponent implements OnInit {
   @ViewChild('mainNav') mainNav!: ElementRef;
@@ -103,8 +104,6 @@ export class AppComponent implements OnInit {
   submitForm() {
     if (this.contactForm.valid) {
       this.loading = true
-      // this.successMessage = 'Form submission successful!';
-      // this.errorMessage = '';
       const formData = new FormData();
       formData.append('wpforms[fields][0][first]', this.contactForm.get('name')?.value);
       formData.append('wpforms[fields][0][last]', '');

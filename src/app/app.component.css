@@ -1,9 +1,21 @@
-.about-image {
-    width: 82%;
+.navBar-tel {
+    display: flex;
+    background-color: red;
+    border-radius: 26px;
+    padding: 10px 9px 0px;
+    color: #fff;
 }
 
-.about-text {
-    box-shadow: 0px 0px 35px -11px rgba(0, 0, 0, 0.5)
+.dropdown-menu {
+    top: 50%;
+}
+
+.nested-menu,
+.nested-menu .dropdown-item:hover,
+.nested-menu .dropdown-item:active {
+    background-color: unset;
+    cursor: pointer !important
+
 }
 
 .service-tab {
