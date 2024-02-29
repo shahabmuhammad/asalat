@@ -68,6 +68,27 @@
     font-size: 21px;
     cursor: pointer !important
 }
-.invalid-feedback{
+
+.invalid-feedback {
     color: #fff !important;
+}
+
+@media (max-width: 992px) {
+    .service-tab>div>p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-tab>div:not(:last-child) {
+        border-right: none;
+    }
+}
+
+footer {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../assets/img/footer-bg.png');
 }
